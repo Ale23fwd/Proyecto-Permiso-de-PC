@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Registro y Login | Sistema de Permisos</title>
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <main>
+    <h1>Sistema de Permisos para PC - Registro y Login</h1>
+
+    
+    <section>
+      <h2>Registro de nuevo usuario</h2>
+      <form id="registroForm">
+        <div>
+          <label for="r_userId">ID de usuario</label>
+          <input type="text" id="r_userId" name="userId" placeholder="Ej: u2025999" required>
+        </div>
+
+        <div>
+          <label for="r_nombre">Nombre completo</label>
+          <input type="text" id="r_nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div>
+          <label for="r_sede">Sede</label>
+          <select id="r_sede" name="sede" required>
+            <option value="">-- Seleccionar sede --</option>
+            <option value="San Jose">San Jose</option>
+            <option value="Puntarenas">Puntarenas</option>
+            <option value="Cartago">Cartago</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="r_password">Contraseña</label>
+          <input type="password" id="r_password" name="password" required>
+        </div>
+
+        <div>
+          <label for="r_password2">Confirmar contraseña</label>
+          <input type="password" id="r_password2" name="password2" required>
+        </div>
+
+        <button type="submit">Crear cuenta</button>
+        <p id="registroMsg"></p>
+      </form>
+    </section>
+
+    <hr>
+
+    
+    <section>
+      <h2>Ingreso</h2>
+      <form id="loginForm">
+        <div>
+          <label for="l_userId">ID de usuario</label>
+          <input type="text" id="l_userId" name="userId" required>
+        </div>
+
+        <div>
+          <label for="l_password">Contraseña</label>
+          <input type="password" id="l_password" name="password" required>
+        </div>
+
+        <button type="submit">Entrar</button>
+        <p id="loginMsg"></p>
+      </form>
+    </section>
+  </main>
+
+ 
+  <script type="module" src="/js/index.js"></script>
+</body>
+</html>

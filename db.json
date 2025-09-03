@@ -1,0 +1,114 @@
+{
+  "usuarios": [
+    {
+      "id": "admin01",
+      "userId": "admin",
+      "password": "admin",
+      "nombre": "Administrador",
+      "sede": "San Jose",
+      "rol": "admin"
+    },
+    {
+      "id": "773e",
+      "userId": "manuel07",
+      "password": "123",
+      "nombre": "manuel cruz",
+      "sede": "San Jose",
+      "rol": "alumno"
+    },
+    {
+      "id": "c843",
+      "userId": "Aleportu03",
+      "password": "12",
+      "nombre": "Alenjandro Portuguez",
+      "sede": "San Jose",
+      "rol": "alumno"
+    },
+    {
+      "id": "dbc0",
+      "userId": "epifelio01",
+      "nombre": "epifelio porras",
+      "sede": "San Jose",
+      "password": "12",
+      "rol": "alumno"
+    },
+    {
+      "id": "3bca",
+      "userId": "Maria01",
+      "nombre": "Maria Sanchez",
+      "sede": "San Jose",
+      "password": "123",
+      "rol": "alumno"
+    },
+    {
+      "id": "11ed",
+      "userId": "Pedro01",
+      "nombre": "pedro  cruz",
+      "sede": "San Jose",
+      "password": "12",
+      "rol": "alumno"
+    },
+    {
+      "id": "e4ea",
+      "userId": "Carlos01",
+      "nombre": "Carlos Lopez",
+      "sede": "San Jose",
+      "password": "12",
+      "rol": "alumno"
+    },
+    {
+      "id": "3183",
+      "userId": "julia01",
+      "nombre": "julia perez",
+      "sede": "Puntarenas",
+      "password": "1",
+      "rol": "alumno"
+    },
+    {
+      "id": "a17c",
+      "userId": "Nardo01",
+      "nombre": "porras",
+      "sede": "San Jose",
+      "password": "12",
+      "rol": "alumno"
+    },
+    {
+      "id": "9502",
+      "userId": "manuel0712",
+      "nombre": "Manuel portuguez",
+      "sede": "Puntarenas",
+      "password": "1",
+      "rol": "alumno"
+    }
+  ],
+  "solicitudes": [
+    {
+      "id": "9a6f",
+      "userId": "Nardo01",
+      "nombre": "porras",
+      "sede": "San Jose",
+      "fechaSalida": "2011-01-12",
+      "fechaRegreso": "2011-02-12",
+      "codigo": "LAB-CHROME-029",
+      "aceptaCondiciones": true,
+      "firma": "nardo",
+      "estado": "aprobada",
+      "creadaEl": "2025-09-03T01:54:39.736Z",
+      "actualizadoEn": "2025-09-03T01:59:23.949Z"
+    },
+    {
+      "id": "c793",
+      "userId": "manuel0712",
+      "nombre": "Manuel portuguez",
+      "sede": "Puntarenas",
+      "fechaSalida": "2000-01-12",
+      "fechaRegreso": "2000-01-12",
+      "codigo": "LAB-CHROME-022",
+      "aceptaCondiciones": true,
+      "firma": "Manuel",
+      "estado": "rechazada",
+      "creadaEl": "2025-09-03T01:57:06.948Z",
+      "actualizadoEn": "2025-09-03T01:59:32.041Z"
+    }
+  ]
+}

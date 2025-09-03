@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Solicitud de Permiso</title>
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <div id="appHeader"></div>
+
+  <main>
+    <h1>Solicitud de permiso para uso de computadoras</h1>
+
+    <form id="solicitudForm">
+      <div>
+        <label for="userId">ID de usuario</label>
+        <input type="text" id="userId" name="userId" readonly>
+      </div>
+
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" readonly>
+      </div>
+
+      <div>
+        <label for="sede">Sede</label>
+        <select id="sede" name="sede" required>
+          <option value="">-- Seleccionar sede --</option>
+          <option value="San Jose">San Jose</option>
+          <option value="Puntarenas">Puntarenas</option>
+          <option value="Cartago">Cartago</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="fechaSalida">Fecha de salida</label>
+        <input type="date" id="fechaSalida" name="fechaSalida" required>
+      </div>
+
+      <div>
+        <label for="fechaRegreso">Fecha de regreso</label>
+        <input type="date" id="fechaRegreso" name="fechaRegreso" required>
+      </div>
+
+      <div>
+        <label for="codigo">Código de la computadora</label>
+        <input type="text" id="codigo" name="codigo" placeholder="Ej: LAB-CHROME-023" required>
+      </div>
+
+      <p>Condiciones de uso (debes aceptarlas):</p>
+      <ul>
+        <li>Transporta el equipo de forma segura.</li>
+        <li>No descargues software no académicos.</li>
+        <li>El equipo será revisado antes y después.</li>
+        <li>Se requiere boleta física junto con este formulario.</li>
+      </ul>
+      <div>
+        <input type="checkbox" id="aceptaCondiciones" required>
+        <label for="aceptaCondiciones">Acepto las condiciones de uso</label>
+      </div>
+
+      <div>
+        <label for="firma">Firma del solicitante </label>
+        <input type="text" id="firma" name="firma" placeholder="Escribe tu nombre completo">
+      </div>
+
+      <button type="submit">Enviar solicitud</button>
+      <p id="solicitudMsg"></p>
+    </form>
+  </main>
+
+  <script type="module">
+    import { protegerRuta, renderNavbar } from "/js/nav.js";
+    protegerRuta({ requiereAdmin: false });
+    renderNavbar();
+  </script>
+  <script type="module" src="/js/solicitudPage.js"></script>
+</body>
+</html>

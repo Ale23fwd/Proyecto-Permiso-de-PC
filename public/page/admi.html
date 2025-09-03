@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Panel Admin</title>
+  <link rel="stylesheet" href="/css/estilos.css" />
+</head>
+<body>
+  <div id="appHeader"></div>
+  <main>
+    <h1>Administrador  Solicitudes</h1>
+
+    <label>
+      Mostrar:
+      <select id="filtro-estado">
+        <option value="">Todas</option>
+        <option value="pendiente">Pendiente</option>
+        <option value="aprobada">Aprobada</option>
+        <option value="rechazada">Rechazada</option>
+      </select>
+    </label>
+
+    <table border="1" style="border-collapse:collapse; width:100%; margin-top:10px">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>User</th>
+          <th>Sede</th>
+          <th>Salida</th>
+          <th>Regreso</th>
+          <th>Código</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="tabla-rows"></tbody>
+    </table>
+
+    <p id="adminMsg"></p>
+  </main>
+
+  <script type="module">
+    import { protegerRuta, renderNavbar } from "/js/nav.js";
+    protegerRuta({ requiereAdmin: true });
+    renderNavbar();
+  </script>
+  <script type="module" src="/js/admi.js"></script>
+</body>
+</html>

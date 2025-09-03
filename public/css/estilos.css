@@ -1,0 +1,165 @@
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #cff7f2;     
+  color: #222;             
+}
+
+/* Contenido */
+main{
+  width:min(900px, 92%);
+  margin: 24px auto 40px;
+}
+
+/* Títulos */
+h1{ margin:16px 0; font-size:28px; line-height:1.2 }
+h2{ margin:18px 0 10px; font-size:20px }
+
+
+.panel{
+  background: #ffffff;              
+  border: 1px solid #cfd8df;          
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
+  padding: 18px;
+  margin: 14px 0;
+}
+
+/* Formularios */
+
+form{ display:block; }
+form .row{ margin-bottom:12px; }
+label{ display:block; margin-bottom:6px; color:#5b6b79; font-size:14px }
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+  width:100%;
+  padding:10px;
+  border:1px solid #cfd8df;
+  border-radius:8px;
+  background:#fff;
+  color:#222;
+  outline:none;
+}
+input::placeholder{ color:#9aa7b3; }
+input:focus, select:focus, textarea:focus{
+  border-color:#9dc5ff;
+  box-shadow:0 0 0 2px rgba(31,122,224,.12);
+}
+input[readonly]{ background:#f5f7fa; }
+
+/* Checkbox y línea */
+
+.inline{ display:flex; align-items:center; gap:8px; }
+hr{
+  border:0; height:1px; background:#cfd8df;
+  margin:18px 0;
+}
+
+/* Botones generales */
+
+button, .btn, input[type="submit"]{
+  width:100%;
+  background: #1f7ae0;  
+  color:#fff;
+  border:0;
+  padding:10px 14px;
+  border-radius:8px;
+  font-weight:700;
+  cursor:pointer;
+}
+button:hover, .btn:hover, input[type="submit"]:hover{
+  background: #1667bf;
+}
+
+/* Mensajes */
+.msg{ margin-top:8px; font-size:14px; color:#d9534f }
+
+/* Lista simple (historial) */
+
+.item{
+  padding:10px; margin:8px 0;
+  border:1px solid #cfd8df;
+  border-radius:8px;
+  background:#fff;
+}
+.item strong{ color:#0f5db7 }
+.item em{ color:#188a7a; font-style:normal }
+
+/*  Tabla admin  */
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+  border:1px solid #cfd8df;
+  border-radius:8px;
+  overflow:hidden;
+}
+thead th{
+  text-align:left;
+  padding:10px;
+  background:#f3f6f9;
+  border-bottom:1px solid #cfd8df;
+  font-weight:700;
+}
+tbody td{
+  padding:10px;
+  border-bottom:1px solid #cfd8df;
+}
+tbody tr:hover{ background:#f9fbfd }
+
+
+
+table td:last-child{
+
+  display:flex;
+  flex-wrap:wrap;      
+  gap:8px;
+  align-items:center;
+}
+table td:last-child button{
+
+  width:auto;          
+  display:inline-block;
+  padding:8px 10px;
+  border-radius:6px;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+/* Colores botones admin */
+
+.btn-aprobar{ background:#34d399; color:#07301b; }
+.btn-rechazar{ background:#ef4444; color:#2b0d0d; }
+.btn-eliminar{ background:#f87171; color:#3b0b0b; }
+.btn-aprobar:hover{ background:#2fb987; }
+.btn-rechazar:hover{ background:#d63b3b; }
+.btn-eliminar:hover{ background:#e46363; }
+
+/* (navbar) */
+
+#appHeader{ margin-bottom:12px }
+.appbar{
+  background:#e9fbf8;
+  border-bottom:1px solid #cfd8df;
+  padding:10px 14px;
+  border-radius:0 0 10px 10px;
+}
+.brand{ font-weight:800 }
+.navlinks{ display:flex; gap:8px; flex-wrap:wrap; margin-top:8px }
+.navlinks a, .navlinks button{
+  text-decoration:none;
+  color:#0d4a99;
+  background:#ffffff;
+  border:1px solid #cfd8df;
+  padding:8px 12px;
+  border-radius:8px;
+  cursor:pointer;
+}
+.navlinks a:hover, .navlinks button:hover{ background:#f6fbff }
